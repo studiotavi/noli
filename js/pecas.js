@@ -23,7 +23,7 @@ const NOLI = {
    - rotuloOpcoes: nome das opções na tela da peça (padrão: 'Cor'). Ex.: 'Modelo', 'Frase'
    --------------------------------------------------------- */
 
-const CATEGORIAS = ['Porta-joias', 'Incensários', 'Porta-velas', 'Folhas', 'Quadrinhos', 'Porta-copos', 'Kits'];
+const CATEGORIAS = ['Porta-joias', 'Incensários', 'Porta-velas', 'Folhas', 'Quadrinhos', 'Porta-copos', 'Chaveiros', 'Bichinhos', 'Kits'];
 
 const PECAS = [
   {
@@ -185,13 +185,70 @@ const PECAS = [
     cores: ['Branco e dourado'],
     tags: ['presente', 'kit', 'anel', 'incenso', 'lua', 'dourado'],
   },
+  {
+    id: 'porta-joias-oval-nude',
+    nome: 'Porta-joias Oval Nude',
+    categoria: 'Porta-joias',
+    foto: 'assets/pecas/porta-joias-oval-nude.jpg',
+    proporcao: '3/4', foco: 'center',
+    preco: 0,
+    descricao: 'Bandeja oval lisa em tom nude, com borda dourada, acabamento brilhante e a assinatura Nóli em dourado no centro. Simples e elegante para anéis, brincos e colares.',
+    medidas: 'Consultar',
+    prazo: '7 a 15 dias',
+    cores: ['Nude e dourado'],
+    tags: ['bandeja', 'oval', 'nude', 'dourado', 'anel', 'brinco', 'penteadeira', 'presente'],
+  },
+  {
+    id: 'chaveiros',
+    nome: 'Chaveiros Divertidos',
+    categoria: 'Chaveiros',
+    foto: 'assets/pecas/chaveiros.jpg',
+    proporcao: '1070/1470', foco: 'center',
+    preco: 0,
+    descricao: 'Chaveiros modelados e pintados à mão, com argola e correntinha douradas: o ganso, a carinha de olhos revirados e a fatia de laranja. Pequenos, leves e cheios de personalidade.',
+    medidas: 'Consultar',
+    prazo: '7 a 15 dias',
+    rotuloOpcoes: 'Modelo',
+    cores: ['Ganso', 'Carinha', 'Laranja', 'Outro modelo'],
+    tags: ['chaveiro', 'ganso', 'pato', 'emoji', 'carinha', 'laranja', 'fruta', 'presente', 'lembrancinha'],
+  },
+  {
+    id: 'gatinho-listrado',
+    nome: 'Gatinho Listrado',
+    categoria: 'Bichinhos',
+    foto: 'assets/pecas/gatinho-listrado.jpg',
+    proporcao: '1070/1470', foco: '50% 60%',
+    preco: 0,
+    descricao: 'Gatinho redondinho em amarelo, com listras laranja e carinha pintada à mão. Fica lindo na mesa de trabalho, na estante ou de presente.',
+    medidas: 'Consultar',
+    prazo: '7 a 15 dias',
+    cores: ['Amarelo e laranja'],
+    tags: ['gato', 'gatinho', 'bichinho', 'amarelo', 'laranja', 'enfeite', 'presente'],
+  },
+  {
+    id: 'bichinhos-gansos-gatinho',
+    nome: 'Bichinhos Gansos e Gatinho',
+    categoria: 'Bichinhos',
+    foto: 'assets/pecas/bichinhos-gansos-gatinho.jpg',
+    proporcao: '1070/1470', foco: '50% 65%',
+    preco: 0,
+    descricao: 'Turminha de bichinhos de enfeite: o ganso sentado, o ganso deitado de olhinhos fechados e o gatinho listrado. Dá para escolher um ou levar a turma toda.',
+    medidas: 'Consultar',
+    prazo: '7 a 15 dias',
+    rotuloOpcoes: 'Modelo',
+    cores: ['Ganso sentado', 'Ganso deitado', 'Gatinho listrado', 'A turma toda'],
+    tags: ['ganso', 'pato', 'gato', 'gatinho', 'bichinho', 'enfeite', 'kit', 'presente'],
+  },
 ];
 
 /* Cartões de texto que aparecem misturados no mural (como pins de citação).
    "depois": aparece depois da peça de número N (começa em 1). */
 const NOTAS = [
+  { depois: 4, imagem: 'assets/pecas/gatinho-recado.jpg', proporcao: '1070/1470', alt: 'Gatinho listrado ao lado do cartão Seu pedido chegou' },
   { depois: 2, titulo: 'Cada peça é única', texto: 'Modelada, lixada e pintada à mão. As pequenas diferenças são a assinatura do ateliê.', fundo: '#6E0003', cor: '#ECE6DC' },
   { depois: 5, imagem: 'assets/noli-poster.jpg', proporcao: '1/1' },
   { depois: 8, titulo: 'Sob encomenda', texto: 'Gostou de uma peça? Toque em “Encomendar” e a gente combina cor, tamanho e prazo pelo WhatsApp.', fundo: '#F8DA9A', cor: '#6E0003' },
-  { depois: 11, titulo: 'Quer algo só seu?', texto: 'Aqui está só uma parte do que sai do ateliê. Fazemos outras peças e personalizamos cores, iniciais e formatos. Conta a sua ideia!', fundo: '#EE7FAD', cor: '#4A0002', acao: 'Contar minha ideia' },
+  { depois: 10, imagem: 'assets/pecas/embalagem.jpg', proporcao: '941/1672', alt: 'Caixa lilás com laço e cartão Seu pedido chegou, como as peças são entregues' },
+  { depois: 13, imagem: 'assets/pecas/porta-joias-e-incensario-dourado.jpg', proporcao: '3/5', alt: 'Porta-joias redondo com anéis dourados e incensário lua com incensos acesos' },
+  { depois: 16, titulo: 'Quer algo só seu?', texto: 'Aqui está só uma parte do que sai do ateliê. Fazemos outras peças e personalizamos cores, iniciais e formatos. Conta a sua ideia!', fundo: '#EE7FAD', cor: '#4A0002', acao: 'Contar minha ideia' },
 ];

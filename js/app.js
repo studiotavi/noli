@@ -84,7 +84,7 @@
     const el = document.createElement('article');
     el.className = 'pin pin--nota';
     if (n.imagem) {
-      el.innerHTML = `<div class="pin__img" style="--ar:${n.proporcao || '1/1'}"><img src="${esc(n.imagem)}" alt="Nóli" loading="lazy"></div>`;
+      el.innerHTML = `<div class="pin__img" style="--ar:${n.proporcao || '1/1'}"><img src="${esc(n.imagem)}" alt="${esc(n.alt || 'Nóli')}" loading="lazy"></div>`;
       return el;
     }
     el.innerHTML = `
